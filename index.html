@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Giphy Party!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 id="header">Giphy Party!</h1>
+    </div>
+    <div class="container">
+      <form action="">
+        <input
+          type="text"
+          id="searchTerm"
+          placeholder="Enter a search term..."
+        /><input
+          type="button"
+          value="Search Giphy"
+          id="searchButton"
+          class="btn"
+        /><input
+          type="button"
+          value="Remove Images"
+          id="clearButton"
+          class="btn"
+        />
+      </form>
+    </div>
+    <div id="gifContainer"></div>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
